@@ -6,42 +6,56 @@ import 'package:butter/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class DartHelloWorld extends StatelessWidget {
-  static const id = "dart_hello_world";
-  const DartHelloWorld({super.key});
+class DartFor extends StatelessWidget {
+  static const id = "dart_for";
+  const DartFor({super.key});
 
   final code = '''
 void main() {
-  print('Hello World!');
+  // for loop
+  for (var i=0; i<3; i++) {
+    print(i);
+  }
+
+
+  // for-in can be used on any iterable
+  var collection = [3, 4, 5];
+  for (var x in collection) {
+    print(x);
+  }
+
+  // for-each
+  final numbers = <int>[1,2,6,7];
+  numbers.forEach(print);
 }
 ''';
 
-  final codeArrow = '''
-void main() => print('Hello World!');
-''';
-
   final codeResult = '''
-\$ dart hello_world.dart
-Hello World!
+\$ dart for.dart
+0
+1
+2
+3
+4
+5
+1
+2
+6
+7
+
 ''';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar(context, "Dart: Hello World!"),
+        appBar: appBar(context, "Dart: For"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
             kpadding(),
-            cardTitle("Hello World!"),
-            kpadding(),
-            ktext(
-                "The main() function is the programs entry point, it can only be used once."),
+            cardTitle("For"),
             kpadding(),
             codeItemGridCol(code),
             kpadding(),
-            ktext("Arrow syntax can also be used: "),
-            kpadding(),
-            codeItemGridCol(codeArrow),
             kpadding(),
             codeItemGridCol(codeResult),
           ]),

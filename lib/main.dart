@@ -1,4 +1,10 @@
+import 'package:butter/screens/dart_for.dart';
 import 'package:butter/screens/dart_hello_world.dart';
+import 'package:butter/screens/dart_if_else.dart';
+import 'package:butter/screens/dart_null_aware.dart';
+import 'package:butter/screens/dart_values.dart';
+import 'package:butter/screens/dart_variables.dart';
+import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +33,12 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.id: (context) => const HomeScreen(),
         DartHelloWorld.id: (context) => const DartHelloWorld(),
+        DartValues.id: (context) => const DartValues(),
+        DartVariables.id: (context) => const DartVariables(),
+        DartFor.id: (context) => const DartFor(),
+        DartIfElse.id: (context) => const DartIfElse(),
+        DartNullAware.id: (context) => const DartNullAware(),
+        DartWhile.id: (context) => const DartWhile(),
       },
     );
   }

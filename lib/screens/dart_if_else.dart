@@ -6,42 +6,48 @@ import 'package:butter/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class DartHelloWorld extends StatelessWidget {
-  static const id = "dart_hello_world";
-  const DartHelloWorld({super.key});
+class DartIfElse extends StatelessWidget {
+  static const id = "dart_if_else";
+  const DartIfElse({super.key});
 
   final code = '''
 void main() {
-  print('Hello World!');
+
+  // if-else-if-else statement 
+  int tempreture = 30;
+  if(tempreture >= 50) {
+    print("hot");
+  } else if(tempreture >= 20) {
+    print("mild");
+  } else {
+    print("cold");
+  }
+
+
+  // ternary operators
+  10 % 2 == 0 
+    ? print("even")
+    : print("odd");
 }
 ''';
 
-  final codeArrow = '''
-void main() => print('Hello World!');
-''';
-
   final codeResult = '''
-\$ dart hello_world.dart
-Hello World!
+\$ dart ifelse.dart
+mild
+even
 ''';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar(context, "Dart: Hello World!"),
+        appBar: appBar(context, "Dart: If/Else"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
             kpadding(),
-            cardTitle("Hello World!"),
-            kpadding(),
-            ktext(
-                "The main() function is the programs entry point, it can only be used once."),
+            cardTitle("If/Else"),
             kpadding(),
             codeItemGridCol(code),
             kpadding(),
-            ktext("Arrow syntax can also be used: "),
-            kpadding(),
-            codeItemGridCol(codeArrow),
             kpadding(),
             codeItemGridCol(codeResult),
           ]),

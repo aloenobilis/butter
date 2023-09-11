@@ -1,47 +1,58 @@
 import 'package:butter/widgets/app_bar.dart';
 import 'package:butter/widgets/code_item.dart';
 import 'package:butter/widgets/kpadding.dart';
-import 'package:butter/widgets/ktext.dart';
 import 'package:butter/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class DartHelloWorld extends StatelessWidget {
-  static const id = "dart_hello_world";
-  const DartHelloWorld({super.key});
+class DartValues extends StatelessWidget {
+  static const id = "dart_values";
+  const DartValues({super.key});
 
   final code = '''
 void main() {
-  print('Hello World!');
+  // string concatenation using `+`
+  print("smooth" + " as" + " butter");
+
+  // integers
+  print("9+1=\${9 + 1}");
+
+  // doubles (float)
+  print("7.129/2.1 =\${7.129 / 2.1}");
+
+  // exponents
+  print("1.42e5=\${1.42e5}");
+
+  // Booleans
+  print(true && false);
+  print(false || true);
+  print(!true);
 }
 ''';
 
-  final codeArrow = '''
-void main() => print('Hello World!');
-''';
-
   final codeResult = '''
-\$ dart hello_world.dart
-Hello World!
+\$ dart values.dart
+smooth as butter
+9+1=10
+7.129/2.1 =3.3947619047619044
+1.42e5=142000
+false
+true
+false
 ''';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar(context, "Dart: Hello World!"),
+        appBar: appBar(context, "Dart: Values"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
             kpadding(),
-            cardTitle("Hello World!"),
-            kpadding(),
-            ktext(
-                "The main() function is the programs entry point, it can only be used once."),
+            cardTitle("Values"),
             kpadding(),
             codeItemGridCol(code),
             kpadding(),
-            ktext("Arrow syntax can also be used: "),
-            kpadding(),
-            codeItemGridCol(codeArrow),
+            // ktext("Arrow syntax can also be used: "),
             kpadding(),
             codeItemGridCol(codeResult),
           ]),

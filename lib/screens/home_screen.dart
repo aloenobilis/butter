@@ -1,4 +1,10 @@
+import 'package:butter/screens/dart_for.dart';
 import 'package:butter/screens/dart_hello_world.dart';
+import 'package:butter/screens/dart_if_else.dart';
+import 'package:butter/screens/dart_null_aware.dart';
+import 'package:butter/screens/dart_values.dart';
+import 'package:butter/screens/dart_variables.dart';
+import 'package:butter/screens/dart_while.dart';
 import 'package:butter/widgets/card_item.dart';
 import 'package:butter/widgets/kpadding.dart';
 import 'package:flutter/material.dart';
@@ -34,14 +40,12 @@ class _HomeScreenState extends State<HomeScreen> {
           child: ResponsiveGridRow(children: [
             kpadding(),
             cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
-            cardItem("Hello World", context, const DartHelloWorld()),
+            cardItem("Values", context, const DartValues()),
+            cardItem("Variables", context, const DartVariables()),
+            cardItem("For", context, const DartFor()),
+            cardItem("If/Else", context, const DartIfElse()),
+            cardItem("Null-aware", context, const DartNullAware()),
+            cardItem("While", context, const DartWhile()),
           ]),
         ));
   }
