@@ -11,6 +11,9 @@ PreferredSizeWidget appBar(BuildContext context, String title) {
         Navigator.pop(context);
       },
     ),
-    title: Text(title),
+    title: Text(
+      title,
+      style: const TextStyle(color: Colors.tealAccent),
+    ),
   );
 }

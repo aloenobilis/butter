@@ -12,30 +12,31 @@ class DartVariables extends StatelessWidget {
 
   final code = '''
 void main() {
-  // 'var' declares a variable.  dartanalyzer infers the type.
-  var a = "initial";
-  print(a);
+  // type:variable - declare a typed variable
+  int hearts = 5;
+  print(hearts);
 
-  // The type can also be declared:
-  num b = 42;
-  print(b);
+  // var:variable - declare a variable, inferred type
+  var plants = ['Hibiscus', 'Aloe']
+  print(plants);
 
-  // final variables cannot be changed once declared
-  final num c = 99;
-  print(c);
+  // final:type:variable - declare a variable that cannot be changed
+  final day = DateTime.now().day;
+  print(day);
 
-  // const variables are compile-time constants
-  const double d = 44.00;
-  print(d);
+  // const:type:variable - declare a compile time constant
+  const double pi = 3.14159;
+  print(pi);
+
 }
 ''';
 
   final codeResult = '''
 \$ dart variables.dart
-initial
-42
-99
-44.0
+5
+[Hibiscus, Aloe]
+12                 # could be different
+3.14159
 ''';
 
   @override
@@ -44,7 +45,6 @@ initial
         appBar: appBar(context, "Dart: Variables"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("Variables"),
             kpadding(),
             codeItemGridCol(code),

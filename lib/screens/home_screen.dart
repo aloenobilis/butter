@@ -1,7 +1,17 @@
+import 'package:butter/screens/dart_abstract.dart';
+import 'package:butter/screens/dart_classes.dart';
+import 'package:butter/screens/dart_error_handling.dart';
 import 'package:butter/screens/dart_for.dart';
+import 'package:butter/screens/dart_functions.dart';
 import 'package:butter/screens/dart_hello_world.dart';
 import 'package:butter/screens/dart_if_else.dart';
+import 'package:butter/screens/dart_list.dart';
+import 'package:butter/screens/dart_map.dart';
+import 'package:butter/screens/dart_mixin.dart';
 import 'package:butter/screens/dart_null_aware.dart';
+import 'package:butter/screens/dart_record.dart';
+import 'package:butter/screens/dart_set.dart';
+import 'package:butter/screens/dart_switch.dart';
 import 'package:butter/screens/dart_values.dart';
 import 'package:butter/screens/dart_variables.dart';
 import 'package:butter/screens/dart_while.dart';
@@ -25,16 +35,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
         // backgroundColor: Colors.white54,
         appBar: AppBar(
-          title: const Center(
-            child: Text(
-              "Butter",
-              style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold),
-            ),
+          centerTitle: true,
+          title: const Text(
+            "Butter",
+            style: TextStyle(
+                color: Colors.orange,
+                fontSize: 22,
+                fontWeight: FontWeight.bold),
           ),
-          backgroundColor: Colors.orange,
         ),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
@@ -46,6 +54,16 @@ class _HomeScreenState extends State<HomeScreen> {
             cardItem("If/Else", context, const DartIfElse()),
             cardItem("Null-aware", context, const DartNullAware()),
             cardItem("While", context, const DartWhile()),
+            cardItem("Switch", context, const DartSwitch()),
+            cardItem("Exceptions", context, const DartExceptions()),
+            cardItem("List", context, const DartList()),
+            cardItem("Map", context, const DartMap()),
+            cardItem("Set", context, const DartSet()),
+            cardItem("Record", context, const DartRecord()),
+            cardItem("Functions", context, const DartFunctions()),
+            cardItem("Classes", context, const DartClasses()),
+            cardItem("Abstract", context, const DartAbstract()),
+            cardItem("Mixin", context, const DartMixin()),
           ]),
         ));
   }

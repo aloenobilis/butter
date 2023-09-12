@@ -6,41 +6,49 @@ import 'package:butter/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class DartHelloWorld extends StatelessWidget {
-  static const id = "dart_hello_world";
-  const DartHelloWorld({super.key});
+class DartSet extends StatelessWidget {
+  static const id = "dart_set";
+  const DartSet({super.key});
 
   final code = '''
 void main() {
-  print('Hello World!');
+  // define a set
+  Set cities = <String>{'New York', 'Tokyo', 'Paris'};
+  
+  // add an item to the set
+  cities.add('Copenhagen');
+ 
+  // iterate over the set
+  cities.forEach((v) => print(v));
+  
+  // convert a list to a set
+  List<int> numbers = [1,1,2,2,3,3,4,4,5,5];
+  Set uniqueNumbers = numbers.toSet();
+  print(uniqueNumbers);
 }
 ''';
 
-  final codeArrow = '''
-void main() => print('Hello World!');
-''';
-
   final codeResult = '''
-\$ dart hello_world.dart
-Hello World!
+\$ dart set.dart
+New York
+Tokyo
+Paris
+Copenhagen
+{1, 2, 3, 4, 5}
 ''';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appBar(context, "Dart: Hello World!"),
+        appBar: appBar(context, "Dart: Set"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            cardTitle("Hello World!"),
+            cardTitle("Set"),
             kpadding(),
             ktext(
-                "The main() function is the programs entry point, it can only be used once."),
+                "Dart Sets are unordered collections where each value must be unique, sets are iterable."),
             kpadding(),
             codeItemGridCol(code),
-            kpadding(),
-            ktext("Arrow syntax can also be used: "),
-            kpadding(),
-            codeItemGridCol(codeArrow),
             kpadding(),
             codeItemGridCol(codeResult),
           ]),

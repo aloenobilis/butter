@@ -20,7 +20,13 @@ ResponsiveGridCol cardItem(String title, BuildContext context, Widget screen) {
             padding: const EdgeInsets.all(20),
             child: Column(
               children: [
-                Text(title),
+                Text(
+                  title,
+                  style: const TextStyle(
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18),
+                ),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.push(context,

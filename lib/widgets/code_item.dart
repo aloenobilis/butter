@@ -11,9 +11,9 @@ ResponsiveGridCol codeItemGridCol(String code) {
         child: SelectableCodeView(
           code: code,
           language: Language.DART,
-          languageTheme: LanguageTheme.ayuDark(),
-          fontSize: 14.0,
-          withZoom: false,
+          languageTheme: LanguageTheme.dracula(),
+          fontSize: 16.0,
+          withZoom: true,
           withLinesCount: false,
           expanded: true,
         ),

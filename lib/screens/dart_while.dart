@@ -12,16 +12,18 @@ class DartWhile extends StatelessWidget {
 
   final code = '''
 void main() {
-  // https://dart.dev/language/loops#while-and-do-while
 
   // while loop - evaluates the condition before the loop
+  // first condition then execution
   var i = 0;
   while(i < 5) {
+    // do block
     print(i);
     i++;
   }
 
   // do-while - evalutes the condition after the loop
+  // first execution then condition
   var j = 0;
   do {
     print(j);
@@ -50,7 +52,6 @@ void main() {
         appBar: appBar(context, "Dart: While"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("While"),
             kpadding(),
             codeItemGridCol(code),

@@ -43,7 +43,6 @@ even
         appBar: appBar(context, "Dart: If/Else"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("If/Else"),
             kpadding(),
             codeItemGridCol(code),

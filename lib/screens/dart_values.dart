@@ -47,7 +47,6 @@ false
         appBar: appBar(context, "Dart: Values"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("Values"),
             kpadding(),
             codeItemGridCol(code),

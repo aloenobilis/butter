@@ -39,7 +39,6 @@ null
         appBar: appBar(context, "Dart: Null-aware"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("Null-aware operators"),
             kpadding(),
             codeItemGridCol(code),

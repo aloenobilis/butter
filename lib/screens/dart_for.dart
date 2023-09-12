@@ -51,7 +51,6 @@ void main() {
         appBar: appBar(context, "Dart: For"),
         body: SingleChildScrollView(
           child: ResponsiveGridRow(children: [
-            kpadding(),
             cardTitle("For"),
             kpadding(),
             codeItemGridCol(code),
