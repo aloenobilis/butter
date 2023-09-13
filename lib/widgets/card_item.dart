@@ -10,7 +10,7 @@ ResponsiveGridCol cardItem(String title, BuildContext context, Widget screen) {
     child: Container(
       padding: const EdgeInsets.all(0),
       decoration: const BoxDecoration(
-          color: Colors.amber, border: Border(), shape: BoxShape.circle),
+          color: Colors.orangeAccent, border: Border(), shape: BoxShape.circle),
       child: Card(
         elevation: 10,
         child: SizedBox(

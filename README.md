@@ -1,16 +1,41 @@
 # butter
 
-A new Flutter project.
+![Dart](https://img.shields.io/badge/dart-3.0.6-blue) ![Flutter](https://img.shields.io/badge/flutter-3.10.6-blue)
 
-## Getting Started
+A Dart and Flutter resource.
 
-This project is a starting point for a Flutter application.
+#### Dart
+- Hello World
+- Values
+- Variables
+- For
+- If/Else
+- Null-aware
+- While
+- Switch
+- Exceptions
+- List
+- Map
+- Set
+- Record
+- Functions
+- Classes
+- Abstract
+- Mixin
+- futures (async/await)
+- streams
+- iterators
+- sync* - generators
+- async* 
+- await for
+- yield*
+- isolates
+- extension
+- TODO uri 
+- TODO http
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Flutter
+- TODO text, rich
+- TODO container
+- TODO colors

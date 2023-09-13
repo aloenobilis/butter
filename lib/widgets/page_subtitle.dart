@@ -9,9 +9,7 @@ ResponsiveGridCol cardSubtitle(String title) {
       child: Text(
         title,
         style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w100,
-            color: Colors.orangeAccent),
+            fontSize: 18, fontWeight: FontWeight.w100, color: Colors.orange),
       ),
     ),
   ));
