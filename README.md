@@ -31,11 +31,19 @@ A Dart and Flutter resource.
 - yield*
 - isolates
 - extension
-- TODO uri 
-- TODO http
-
+- http
+- TODO tests
 
 #### Flutter
-- TODO text, rich
-- TODO container
-- TODO colors
+- text, rich text
+- container, animated container
+- TODO colors, swatches
+- TODO streambuilder
+- TODO textfield, textformfield
+- TODO sized box
+- TODO listview builder
+- TODO advanced: bloc pattern
+- TODO advanced: lazy loading
+- TODO tests
+- TODO
+- TODO

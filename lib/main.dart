@@ -25,6 +25,8 @@ import 'package:butter/screens/dart_values.dart';
 import 'package:butter/screens/dart_variables.dart';
 import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
+import 'package:butter/screens/flutter_container.dart';
+import 'package:butter/screens/flutter_text.dart';
 import 'package:butter/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +48,6 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        /* dark theme settings */
       ),
       themeMode: ThemeMode.dark,
       initialRoute: HomeScreen.id,
@@ -79,6 +80,8 @@ class MyApp extends StatelessWidget {
         DartIsolates.id: (context) => const DartIsolates(),
         DartExtension.id: (context) => const DartExtension(),
         DartHttp.id: (context) => const DartHttp(),
+        FlutterText.id: (context) => const FlutterText(),
+        FlutterContainer.id: (context) => const FlutterContainer(),
       },
     );
   }

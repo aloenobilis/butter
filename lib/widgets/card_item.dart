@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-ResponsiveGridCol cardItem(String title, BuildContext context, Widget screen) {
+ResponsiveGridCol cardItem(String title, BuildContext context, String route) {
   return ResponsiveGridCol(
     xs: 6,
     md: 3,
@@ -23,14 +23,13 @@ ResponsiveGridCol cardItem(String title, BuildContext context, Widget screen) {
                 Text(
                   title,
                   style: const TextStyle(
-                      color: Colors.orange,
-                      fontWeight: FontWeight.bold,
+                      color: Colors.orangeAccent,
+                      fontWeight: FontWeight.w100,
                       fontSize: 18),
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => screen));
+                      Navigator.pushNamed(context, route);
                     },
                     style: ButtonStyle(
                         backgroundColor:
