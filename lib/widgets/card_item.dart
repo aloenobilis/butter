@@ -25,7 +25,7 @@ ResponsiveGridCol cardItem(String title, BuildContext context, String route) {
                   style: const TextStyle(
                       color: Colors.orangeAccent,
                       fontWeight: FontWeight.w100,
-                      fontSize: 18),
+                      fontSize: 16),
                 ),
                 ElevatedButton(
                     onPressed: () {

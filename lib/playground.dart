@@ -1,21 +1,23 @@
-// https://pub.dev/packages/http
-
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 void main() async {
-  // Uri: authority:path:paramaters
-  var url = Uri.http('hn.algolia.com', 'api/v1/search', {'query': 'dart'});
+  // create a Regex pattern
+  RegExp string = RegExp(r'(\w+)');
 
-  var response = await http.get(url);
+  // data
+  String data = "Dart is awesome!";
 
-  // decode response
-  var parsedJson = json.decode(response.body);
+  // first match
+  RegExpMatch? match = string.firstMatch(data);
+  print(match![0]);
 
-  var result = parsedJson['hits'][0];
-  var title = result['title'];
-  var link = result['url'];
-  print('$title : $link');
+  // all matches
+  Iterable<RegExpMatch> matches = string.allMatches(data);
+  for (final m in matches) {
+    print(m[0]);
+  }
+
+  // has match
+  print(string.hasMatch(data));
 }
-
-// Dart language : http://www.dartlang.org/

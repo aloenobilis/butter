@@ -17,6 +17,7 @@ import 'package:butter/screens/dart_map.dart';
 import 'package:butter/screens/dart_mixin.dart';
 import 'package:butter/screens/dart_null_aware.dart';
 import 'package:butter/screens/dart_record.dart';
+import 'package:butter/screens/dart_regex.dart';
 import 'package:butter/screens/dart_set.dart';
 import 'package:butter/screens/dart_streams.dart';
 import 'package:butter/screens/dart_switch.dart';
@@ -25,7 +26,9 @@ import 'package:butter/screens/dart_values.dart';
 import 'package:butter/screens/dart_variables.dart';
 import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
+import 'package:butter/screens/flutter_color.dart';
 import 'package:butter/screens/flutter_container.dart';
+import 'package:butter/screens/flutter_stream_builder.dart';
 import 'package:butter/screens/flutter_text.dart';
 import 'package:butter/screens/flutter_text_field.dart';
 import 'package:butter/screens/home_screen.dart';
@@ -81,9 +84,12 @@ class MyApp extends StatelessWidget {
         DartIsolates.id: (context) => const DartIsolates(),
         DartExtension.id: (context) => const DartExtension(),
         DartHttp.id: (context) => const DartHttp(),
+        DartRegex.id: (context) => const DartRegex(),
         FlutterText.id: (context) => const FlutterText(),
+        FlutterColor.id: (context) => const FlutterColor(),
         FlutterContainer.id: (context) => const FlutterContainer(),
         FlutterTextField.id: (context) => const FlutterTextField(),
+        FlutterStreamBuilder.id: (context) => const FlutterStreamBuilder(),
       },
     );
   }

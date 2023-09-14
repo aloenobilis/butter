@@ -32,19 +32,17 @@ A Dart and Flutter resource.
 - isolates
 - extension
 - http
+- regex
 - TODO tests
 
 #### Flutter
 - text, rich text
 - container, animated container
 - textfield
-- TODO colors, swatches
-- TODO streambuilder
-
+- streambuilder
+- color, colors, material color
 - TODO sized box
 - TODO listview builder
 - TODO advanced: bloc pattern, repository pattern
 - TODO advanced: lazy loading
 - TODO tests
-- TODO
-- TODO

@@ -17,6 +17,7 @@ import 'package:butter/screens/dart_map.dart';
 import 'package:butter/screens/dart_mixin.dart';
 import 'package:butter/screens/dart_null_aware.dart';
 import 'package:butter/screens/dart_record.dart';
+import 'package:butter/screens/dart_regex.dart';
 import 'package:butter/screens/dart_set.dart';
 import 'package:butter/screens/dart_streams.dart';
 import 'package:butter/screens/dart_switch.dart';
@@ -25,7 +26,9 @@ import 'package:butter/screens/dart_values.dart';
 import 'package:butter/screens/dart_variables.dart';
 import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
+import 'package:butter/screens/flutter_color.dart';
 import 'package:butter/screens/flutter_container.dart';
+import 'package:butter/screens/flutter_stream_builder.dart';
 import 'package:butter/screens/flutter_text.dart';
 import 'package:butter/screens/flutter_text_field.dart';
 import 'package:butter/widgets/card_item.dart';
@@ -81,12 +84,15 @@ class _HomeScreenState extends State<HomeScreen> {
             cardItem("Isolates", context, DartIsolates.id),
             cardItem("Extension", context, DartExtension.id),
             cardItem("Http", context, DartHttp.id),
+            cardItem("Regex", context, DartRegex.id),
             kpadding(),
             cardTitle("Flutter"),
             kpadding(),
             cardItem("Text", context, FlutterText.id),
+            cardItem("Color", context, FlutterColor.id),
             cardItem("Container", context, FlutterContainer.id),
             cardItem("Text Field", context, FlutterTextField.id),
+            cardItem("Stream Builder", context, FlutterStreamBuilder.id),
           ]),
         ));
   }
