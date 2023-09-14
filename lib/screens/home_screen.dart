@@ -27,6 +27,7 @@ import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
 import 'package:butter/screens/flutter_container.dart';
 import 'package:butter/screens/flutter_text.dart';
+import 'package:butter/screens/flutter_text_field.dart';
 import 'package:butter/widgets/card_item.dart';
 import 'package:butter/widgets/kpadding.dart';
 import 'package:butter/widgets/page_title.dart';
@@ -85,6 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
             kpadding(),
             cardItem("Text", context, FlutterText.id),
             cardItem("Container", context, FlutterContainer.id),
+            cardItem("Text Field", context, FlutterTextField.id),
           ]),
         ));
   }

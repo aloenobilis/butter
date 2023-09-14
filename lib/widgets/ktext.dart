@@ -5,7 +5,7 @@ ResponsiveGridCol ktext(String text) {
   return ResponsiveGridCol(
       child: Center(
     child: SizedBox(
-      width: 500,
+      width: 750,
       child: Text(
         text,
         style: const TextStyle(fontSize: 16),

@@ -27,6 +27,7 @@ import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
 import 'package:butter/screens/flutter_container.dart';
 import 'package:butter/screens/flutter_text.dart';
+import 'package:butter/screens/flutter_text_field.dart';
 import 'package:butter/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -82,6 +83,7 @@ class MyApp extends StatelessWidget {
         DartHttp.id: (context) => const DartHttp(),
         FlutterText.id: (context) => const FlutterText(),
         FlutterContainer.id: (context) => const FlutterContainer(),
+        FlutterTextField.id: (context) => const FlutterTextField(),
       },
     );
   }

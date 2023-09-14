@@ -37,12 +37,13 @@ A Dart and Flutter resource.
 #### Flutter
 - text, rich text
 - container, animated container
+- textfield
 - TODO colors, swatches
 - TODO streambuilder
-- TODO textfield, textformfield
+
 - TODO sized box
 - TODO listview builder
-- TODO advanced: bloc pattern
+- TODO advanced: bloc pattern, repository pattern
 - TODO advanced: lazy loading
 - TODO tests
 - TODO
