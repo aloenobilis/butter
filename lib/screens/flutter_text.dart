@@ -112,6 +112,8 @@ RichText(
             kpadding(),
             codeItemGridCol(codeRich),
             richText(),
+            kpadding(),
+            kpadding(),
           ]),
         ));
   }

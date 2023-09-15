@@ -28,6 +28,7 @@ import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
 import 'package:butter/screens/flutter_color.dart';
 import 'package:butter/screens/flutter_container.dart';
+import 'package:butter/screens/flutter_animation.dart';
 import 'package:butter/screens/flutter_stream_builder.dart';
 import 'package:butter/screens/flutter_text.dart';
 import 'package:butter/screens/flutter_text_field.dart';
@@ -93,6 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
             cardItem("Container", context, FlutterContainer.id),
             cardItem("Text Field", context, FlutterTextField.id),
             cardItem("Stream Builder", context, FlutterStreamBuilder.id),
+            cardItem("Animation", context, FlutterAnimation.id),
           ]),
         ));
   }

@@ -41,6 +41,12 @@ A Dart and Flutter resource.
 - textfield
 - streambuilder
 - color, colors, material color
+- animation
+- TODO shapes - rectangle, circle, triangle
+- TODO navigator
+- TODO package: responsive grid
+- TODO package: sqflite
+- TODO widget params, widget.param
 - TODO sized box
 - TODO listview builder
 - TODO advanced: bloc pattern, repository pattern
