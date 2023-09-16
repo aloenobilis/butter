@@ -35,6 +35,7 @@ dependencies:
   any_syntax_highlighter: ^0.0.13
   sidebarx: ^0.16.1
   http: ^1.1.0
+  animations: ^2.0.8
   ##########################################
 
 

@@ -9,6 +9,7 @@ import 'package:responsive_grid/responsive_grid.dart';
 
 class FlutterAnimation extends StatefulWidget {
   static const id = 'flutter_animation';
+  const FlutterAnimation({super.key});
 
   @override
   State<FlutterAnimation> createState() => _FlutterAnimationState();

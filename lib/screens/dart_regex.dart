@@ -13,7 +13,7 @@ class DartRegex extends StatelessWidget {
   final code = '''
 void main() async {
   // create a Regex pattern
-  RegExp string = RegExp(r'(\w+)');
+  RegExp string = RegExp(r'(\\w+)');
 
   // data
   String data = "Dart is awesome!";

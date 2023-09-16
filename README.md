@@ -42,8 +42,8 @@ A Dart and Flutter resource.
 - streambuilder
 - color, colors, material color
 - animation
-- TODO shapes - rectangle, circle, triangle
-- TODO navigator
+- navigator
+- custom paint
 - TODO package: responsive grid
 - TODO package: sqflite
 - TODO widget params, widget.param
@@ -51,4 +51,5 @@ A Dart and Flutter resource.
 - TODO listview builder
 - TODO advanced: bloc pattern, repository pattern
 - TODO advanced: lazy loading
-- TODO tests
+- TODO tests (flutter, integration tests using driver)
+- TODO use animated page builders in the app.

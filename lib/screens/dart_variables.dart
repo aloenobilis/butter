@@ -1,7 +1,6 @@
 import 'package:butter/widgets/app_bar.dart';
 import 'package:butter/widgets/code_item.dart';
 import 'package:butter/widgets/kpadding.dart';
-import 'package:butter/widgets/ktext.dart';
 import 'package:butter/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';

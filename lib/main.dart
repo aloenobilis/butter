@@ -26,9 +26,12 @@ import 'package:butter/screens/dart_values.dart';
 import 'package:butter/screens/dart_variables.dart';
 import 'package:butter/screens/dart_while.dart';
 import 'package:butter/screens/dart_yield_star.dart';
+import 'package:butter/screens/flutter_animation_2.dart';
 import 'package:butter/screens/flutter_color.dart';
 import 'package:butter/screens/flutter_container.dart';
 import 'package:butter/screens/flutter_animation.dart';
+import 'package:butter/screens/flutter_custom_paint.dart';
+import 'package:butter/screens/flutter_navigator.dart';
 import 'package:butter/screens/flutter_stream_builder.dart';
 import 'package:butter/screens/flutter_text.dart';
 import 'package:butter/screens/flutter_text_field.dart';
@@ -91,7 +94,10 @@ class MyApp extends StatelessWidget {
         FlutterContainer.id: (context) => const FlutterContainer(),
         FlutterTextField.id: (context) => const FlutterTextField(),
         FlutterStreamBuilder.id: (context) => const FlutterStreamBuilder(),
-        FlutterAnimation.id: (context) => FlutterAnimation(),
+        FlutterAnimation.id: (context) => const FlutterAnimation(),
+        FlutterAnimation2.id: (context) => const FlutterAnimation2(),
+        FlutterNavigator.id: (context) => const FlutterNavigator(),
+        FlutterCustomPaint.id: (context) => const FlutterCustomPaint(),
       },
     );
   }

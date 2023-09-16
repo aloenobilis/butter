@@ -27,7 +27,7 @@ class _FlutterTextFieldState extends State<FlutterTextField> {
   ResponsiveGridCol textField() {
     return ResponsiveGridCol(
       child: Center(
-        child: Container(
+        child: SizedBox(
           width: 750,
           child: TextField(
             controller: controller,
