@@ -42,6 +42,7 @@ A Dart and Flutter resource.
 - streambuilder
 - color, colors, material color
 - animation
+- animation 2
 - navigator
 - custom paint
 - TODO package: responsive grid
@@ -53,3 +54,8 @@ A Dart and Flutter resource.
 - TODO advanced: lazy loading
 - TODO tests (flutter, integration tests using driver)
 - TODO use animated page builders in the app.
+
+
+
+#### reference
+Inspired by [Dart By Example](https://www.jpryan.me/dartbyexample/), with some code from this [article](https://medium.com/flutter-community/flutter-animations-comprehensive-guide-cb93b246ca5d) on animations. And ofcourse the Flutter [docs](https://docs.flutter.dev/) and Dart [docs](https://dart.dev/guides).
