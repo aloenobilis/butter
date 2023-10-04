@@ -1,6 +1,6 @@
 # butter
 
-![Dart](https://img.shields.io/badge/dart-3.0.6-blue) ![Flutter](https://img.shields.io/badge/flutter-3.10.6-blue)
+![Dart](https://img.shields.io/badge/dart-3.0.6-blue) ![Flutter](https://img.shields.io/badge/flutter-3.10.6-blue) ![Channel](https://img.shields.io/badge/channel-stable-blue)
 
 A Dart and Flutter resource.
 

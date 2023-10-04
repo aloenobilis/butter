@@ -94,6 +94,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_animate:
+    dependency: "direct main"
+    description:
+      name: flutter_animate
+      sha256: "62f346340a96192070e31e3f2a1bd30a28530f1fe8be978821e06cd56b74d6d2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.0+1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -251,14 +259,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.4"
-  sidebarx:
-    dependency: "direct main"
-    description:
-      name: sidebarx
-      sha256: e14796e2ac07e51ad27e19dc35e1316d6993d32faa27eb0b6008718a70a8fa99
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.16.1"
   sky_engine:
     dependency: transitive
     description: flutter

@@ -301,6 +301,7 @@ class AnimatedBuilderExample extends StatefulWidget {
   const AnimatedBuilderExample({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _AnimatedBuilderExampleState createState() => _AnimatedBuilderExampleState();
 }
 

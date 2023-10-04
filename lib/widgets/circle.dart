@@ -11,6 +11,7 @@ class Circle extends StatelessWidget {
   final bool isPositioned;
 
   const Circle({
+    super.key,
     required this.color1,
     required this.color2,
     this.left,
